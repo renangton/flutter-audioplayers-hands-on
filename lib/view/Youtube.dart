@@ -38,24 +38,36 @@ class Youtube extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 50,
+              height: 30,
             ),
             for (int i = 1; i < soundEffect.length; i++)
               Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: ElevatedButton(
-                  onPressed: () {
-                    final source = soundEffect.elementAt(i).values.first;
-                    playAudio("sounds/$source.mp3");
-                  },
-                  style: ElevatedButton.styleFrom(),
-                  child: Text(
-                    soundEffect.elementAt(i).keys.first,
-                    style: const TextStyle(
-                      fontSize: 40,
-                      fontWeight: FontWeight.bold,
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10.0),
+                      child: IconButton(
+                        onPressed: () {
+                          final source = soundEffect.elementAt(i).values.first;
+                          playAudio("sounds/$source.mp3");
+                        },
+                        icon: const Icon(
+                          Icons.play_circle_rounded,
+                          color: Colors.red,
+                          size: 40,
+                        ),
+                      ),
                     ),
-                  ),
+                    Text(
+                      soundEffect.elementAt(i).keys.first,
+                      style: const TextStyle(
+                        fontSize: 30,
+                        // fontWeight: FontWeight.bold,
+                        color: Colors.black87,
+                      ),
+                    ),
+                  ],
                 ),
               ),
           ],
