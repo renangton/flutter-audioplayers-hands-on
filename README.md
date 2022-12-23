@@ -42,7 +42,7 @@ dependencies:
 # ビルド資材にmp3ファイルをセットして音声を再生する場合
 
 1. プロジェクト直下に`assets`フォルダを作成し、音声ファイルを入れる
-    - `assets`フォルダ配下に音声ファイル以外入れる可能性があるため、今回は`sounds`フォルダを作成し、その中にmp3ファイルを入れています。
+    - `assets`フォルダ配下に音声ファイル以外入れる可能性があるため、今回は`sounds`フォルダを作成し、その中にmp3ファイルを入れています
 
 2. `pubspec.yaml`のflutterに下記を記述  
 
@@ -68,7 +68,7 @@ mp3ファイルを変換したバイナリデータを使用しています。
 ```dart
 final AudioCache _player = AudioCache();
 // バイナリデータを8ビットのリストに変換
-final unit8Audio = base64Decode(binary);
+final unit8Audio = base64Decode("[バイナリデータ]");
 _player.playBytes(unit8Audio);
 ```
 
