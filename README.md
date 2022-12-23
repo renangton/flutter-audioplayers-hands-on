@@ -79,6 +79,9 @@ _player.playBytes(unit8Audio);
 2. デバイスを選択し、起動
 3. エミュレータで実行
     - <https://developer.android.com/training/basics/firstapp/running-app?hl=ja#Emulator>
+    
+[untitled.webm](https://user-images.githubusercontent.com/97335620/209307077-88719e89-1298-4dbb-b72d-d1207d38fe4b.webm)
+
 
 # ボタンをタップすると音声が再生されるページを作成してみましょう
 
