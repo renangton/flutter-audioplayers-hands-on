@@ -63,12 +63,8 @@ flutter:
 3. 以下の内容を実装
 
 ```dart
-
 final AudioCache _player = AudioCache();
-_player.play("
-sounds/[ファイル名]
-"
-);
+_player.play("sounds/[ファイル名]");
 ```
 
 参考: <https://github.com/renangton/flutter-audioplayers-hands-on/blob/a5f63d5779f5ab034f96eb485defac897a084905/lib/view/Youtube.dart#L16-L20>
